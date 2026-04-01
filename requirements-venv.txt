@@ -1,0 +1,37 @@
+# Use this file with the project virtual environment (not the legacy pinned requirements.txt).
+# The original App/requirements.txt pins spacy==2.3.5, which often fails to build from source
+# on current Python/setuptools; this list uses wheels-compatible versions.
+#
+# Setup:
+#   cd /path/to/AI-Resume-Analyzer-main
+#   python3 -m venv venv
+#   ./venv/bin/pip install -U pip setuptools wheel
+#   ./venv/bin/pip install -r requirements-venv.txt
+#
+# Run (from App/):
+#   export MYSQL_PASSWORD='your_mysql_root_password'   # must match your MySQL server
+#   ../venv/bin/python -m streamlit run App.py
+#
+# Create database `cv` in MySQL once (or let the app create objects if your user has rights).
+
+python-dotenv>=1.0
+streamlit>=1.12
+pandas>=1.4
+pymysql>=1.0
+geocoder
+geopy
+plotly
+streamlit-tags
+pdfminer3
+nltk
+Pillow
+pafy
+matplotlib
+numpy
+requests
+pyresparser
+spacy>=3.4,<4
+pdfminer.six
+docx2txt
+validators
+en-core-web-sm @ https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-3.8.0/en_core_web_sm-3.8.0-py3-none-any.whl

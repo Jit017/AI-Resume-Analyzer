@@ -1,0 +1,18 @@
+# Reads MYSQL_* from project .env (same as the Streamlit app).
+services:
+  mysql:
+    image: mysql:8.0
+    container_name: ai-resume-analyzer-mysql
+    restart: unless-stopped
+    environment:
+      MYSQL_ROOT_PASSWORD: ${MYSQL_PASSWORD:-resume_analyzer_local}
+      MYSQL_DATABASE: ${MYSQL_DATABASE:-cv}
+    ports:
+      # Host 3307 avoids clashing with another MySQL on 3306
+      - "3307:3306"
+    healthcheck:
+      test: ["CMD", "mysqladmin", "ping", "-h", "127.0.0.1", "-uroot", "-p${MYSQL_PASSWORD:-resume_analyzer_local}"]
+      interval: 5s
+      timeout: 5s
+      retries: 15
+      start_period: 25s

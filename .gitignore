@@ -1,0 +1,34 @@
+# Virtual environments
+venv/
+.venv/
+.env
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg-info/
+.eggs/
+dist/
+build/
+
+# User-uploaded resumes (never commit PDFs from runs)
+App/Uploaded_Resumes/*
+!App/Uploaded_Resumes/.gitkeep
+
+# OS / editors
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Logs / local
+*.log
+.streamlit/secrets.toml
+
+# Legacy synopsis from upstream (optional)
+RESUME ANALYSER SYNOPSIS.pdf
