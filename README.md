@@ -216,7 +216,7 @@ For major changes, please open an issue first to discuss what you would like to 
 
 **Main Screen**
 
-![Screenshot](./screenshots/user/1-main-screen.png)
+![Screenshot](./screenshots/user/1-main-s.png)
 
 **Resume Analysis**
 
