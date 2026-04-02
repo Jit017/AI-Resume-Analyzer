@@ -242,7 +242,7 @@ For major changes, please open an issue first to discuss what you would like to 
 
 **Feedback Form**
 
-![Screenshot](./screenshots/feedback/1-form.png)
+![Screenshot](./screenshots/feedbac/1-form.png)
 
 **Overall Rating Analysis and Comment History**
 
@@ -252,7 +252,7 @@ For major changes, please open an issue first to discuss what you would like to 
 
 **Login**
 
-![Screenshot](./screenshots/admin/1-main-screen.png)
+![Screenshot](./screenshots/admin/1-main-scren.png)
 
 **User Count and it's data**
 
